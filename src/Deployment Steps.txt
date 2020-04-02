@@ -11,3 +11,14 @@ git push -u origin master
 
 
 Change git hub source to master/docs
+
+
+============================================================================================
+
+#mock api : https://e4yl1.mocklab.io/formFields
+
+#github: https://github.com/sujithakumar/Bhoomi
+
+#hosted in git : https://sujithakumar.github.io/Bhoomi/
+
+#steps and links: ..\Bhoomi\src\Deployment Steps.txt

@@ -16,6 +16,7 @@
             <div class="form-group col-md-6">
                 <label>{{item.fieldName}}<span *ngIf="item.isRequried" class="req">*</span></label>
                 <select class="form-control">
+                    <option></option>
                     <option *ngFor="let x of item.values" [ngValue]="x">
                         {{x}}
                     </option>
