@@ -1,0 +1,13 @@
+Deploying to git 
+============================================================
+
+angular.json file --> change the outputpath value to “docs/”
+
+ng build --prod --base-href="https://sujithakumar.github.io/Reponame/"
+git status
+git add .
+git commit -m "generated deployables"
+git push -u origin master
+
+
+Change git hub source to master/docs

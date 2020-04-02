@@ -1,0 +1,76 @@
+{
+    "crop": {
+        "dropDown": [
+            {
+                "fieldName": "Crop Name",
+                "values": [
+                    "rice",
+                    "wheat",
+                    "corn"
+                ],
+                "isRequried": true
+            },
+            {
+                "fieldName": "Budget",
+                "values": [
+                    "100-200RS",
+                    "200-300RS",
+                    "300-400RS",
+                    "open to any"
+                ],
+                "isRequried": false
+            }
+        ],
+        "textBox": [
+            {
+                "fieldName": "weight",
+                "isRequried": false
+            },
+            {
+                "fieldName": "quantity",
+                "isRequried": true
+            },
+            {
+                "fieldName": "location",
+                "isRequried": true
+            }
+        ]
+    },
+    "veg": {
+        "dropDown": [
+            {
+                "fieldName": "Fruit Name",
+                "values": [
+                    "Water Melon",
+                    "Mango",
+                    "Orange"
+                ],
+                "isRequried": true
+            },
+            {
+                "fieldName": "Budget",
+                "values": [
+                    "100-200RS",
+                    "200-300RS",
+                    "300-400RS",
+                    "open to any"
+                ],
+                "isRequried": false
+            }
+        ],
+        "textBox": [
+            {
+                "fieldName": "weight",
+                "isRequried": false
+            },
+            {
+                "fieldName": "quantity",
+                "isRequried": true
+            },
+            {
+                "fieldName": "location",
+                "isRequried": true
+            }
+        ]
+    }
+}
