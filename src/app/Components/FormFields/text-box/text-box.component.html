@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label>{{formFieldName}}
+        <span *ngIf="FieldDetails.isrequired" class="req">*</span>
+    </label>
+
+    <input type="text" class="form-control" [name]="FieldDetails.name" [value]="FieldDetails.value"
+        [formControlName]="formFieldName" [placeholder]="FieldDetails.placeHolder" [readOnly]="FieldDetails.isReadOnly"
+        [pattern]="FieldDetails.regex" [maxLength]="FieldDetails.maxLength" />
+</div>

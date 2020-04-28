@@ -1,0 +1,12 @@
+<div class="form-group">
+    <label>{{formFieldName}}
+        <span *ngIf="FieldDetails.isrequired" class="req">*</span>
+    </label>
+
+    <select class="form-control" [name]="FieldDetails.name" [formControlName]="formFieldName">
+        <option *ngFor="let value of FieldDetails.value" [ngValue]="value">
+            {{value}}
+        </option>
+    </select>
+
+</div>

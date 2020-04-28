@@ -1,0 +1,39 @@
+<h2>Please enter below information</h2>
+<div class="container">
+    <form [formGroup]="inputForm">
+        <ul>
+            <li class="form-group">
+                <label>Item:</label>
+                <input type="text" formControlName="Item" class="form-control" value="Rice" readonly />
+            </li>
+
+            <!-- Dynamic fields -->
+
+            <li *ngFor="let field of FormFieldsArr; index as i">
+                <div *ngIf="field.fieldType == 'textBox'">
+                    <app-text-box [formFieldName]="formFieldNames[i]" [FieldDetails]=field></app-text-box>
+                </div>
+                <div *ngIf="field.fieldType == 'textArea'">
+                    <app-text-area [formFieldName]="formFieldNames[i]" [FieldDetails]=field></app-text-area>
+                </div>
+                <div *ngIf="field.fieldType == 'radio'">
+                    <app-radio [formFieldName]="formFieldNames[i]" [FieldDetails]=field></app-radio>
+                </div>
+                <div *ngIf="field.fieldType == 'dropDown'">
+                    <app-drop-down [formFieldName]="formFieldNames[i]" [FieldDetails]=field></app-drop-down>
+                </div>
+            </li>
+
+
+            <!-- submit buttons -->
+            <li>
+                <div class="form-group">
+                    <button class="btn btn-primary">Notify Buyer</button>
+                    <button class="btn btn-primary">Notify Seller</button>
+                    <button class="btn btn-primary">Notify Exporter</button>
+                </div>
+            </li>
+        </ul>
+
+    </form>
+</div>

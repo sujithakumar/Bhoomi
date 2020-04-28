@@ -7,12 +7,23 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { InputComponent } from './Components/input/input.component';
+import { HomeComponent } from './Components/home/home.component';
+import { TextBoxComponent } from './Components/FormFields/text-box/text-box.component';
+import { DropDownComponent } from './Components/FormFields/drop-down/drop-down.component';
+import { RadioComponent } from './Components/FormFields/radio/radio.component';
+import { TextAreaComponent } from './Components/FormFields/text-area/text-area.component';
+import { FormComponent } from './Components/form/form.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent
+    HomeComponent,
+    TextBoxComponent,
+    DropDownComponent,
+    RadioComponent,
+    TextAreaComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

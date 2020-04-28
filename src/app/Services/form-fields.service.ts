@@ -10,10 +10,8 @@ export class FormFieldsService {
 
 
 
-  url = "https://e4yl1.mocklab.io/formFields";
+  url = "./assets/Data/formFields.json";
 
-  public ItemFields: BehaviorSubject<any> = new BehaviorSubject<any>({
-  });
 
   constructor(private http: HttpClient) {
   }
@@ -24,13 +22,5 @@ export class FormFieldsService {
     return this.http.get(this.url);
   }
 
-  //passing data between components:
 
-  setItemFields(ItemFields: any) {
-    this.ItemFields.next(ItemFields);
-  }
-
-  getItemFields() {
-    return this.ItemFields.asObservable();
-  }
 }

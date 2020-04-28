@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label>{{formFieldName}}
+        <span *ngIf="FieldDetails.isrequired" class="req">*</span>
+    </label>
+
+    <span class="form-check form-check-inline" *ngFor="let value of FieldDetails.value ">
+
+        <input type="radio" class=" form-check-input" [name]="FieldDetails.name" [formControlName]="formFieldName"
+            [value]="value">
+        <label class="form-check-label">{{value}}</label>
+
+    </span>
+</div>

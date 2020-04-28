@@ -1,0 +1,12 @@
+ul{
+    list-style-type: none !important;
+
+}
+li{
+    max-width: inherit;
+    width: 100%;
+    display: inline-block !important;
+}
+button{
+    margin: 5px;
+}

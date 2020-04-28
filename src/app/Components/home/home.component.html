@@ -1,0 +1,78 @@
+<div class="container">
+
+    <nav class="navbar navbar-expand-sm justify-content-between fixed-top navbar-dark bg-dark  navbar-static-top"
+        (scroll)="onWindowScroll($event);">
+        <div class="navbar-brand pull-left">
+            <div class="form-group">
+                Logo
+            </div>
+        </div>
+
+        <div>
+            <ul class="navbar-nav navLinks">
+                <li>
+                    <a class="nav-link">
+
+                        <img class=" rounded-circle" src="
+                            https://gifimage.net/wp-content/uploads/2018/10/bell-icon-gif-8.gif"
+                            title="Check Notifications!" height="30" width="30" />
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false"><img class=" rounded-circle" height="30"
+                            src="https://images.indianexpress.com/2016/07/punjab-farmer-759.jpg" width="30" /></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+                <li class="customLi">
+
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- header ends -->
+
+    <div class="bodyDIv">
+        <nav class="navbar navbar-expand-sm justify-content-between">
+            <div>
+                <h2>
+                    What would you like to do?
+                </h2>
+
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="userAction" id="Buy" value="Buy"
+                        (change)="fetchProducts('b')" disabled>
+                    <label class="form-check-label">Buy</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="userAction" id="Sell" value="Sell"
+                        (change)="fetchProducts('s')">
+                    <label class="form-check-label">Sell</label>
+                </div>
+                <!-- disabled radio -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="userAction" id="Transport" value="Transport"
+                        (change)="fetchProducts('t')" disabled>
+                    <label class="form-check-label">Transport</label>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+    <div *ngIf="LoadBody">
+
+        <app-form [generateFormFields]=generateFormFields></app-form>
+
+    </div>
+
+
+</div>
