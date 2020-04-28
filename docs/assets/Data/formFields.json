@@ -1,76 +1,111 @@
 {
-    "crop": {
-        "dropDown": [
-            {
-                "fieldName": "Crop Name",
-                "values": [
-                    "rice",
-                    "wheat",
-                    "corn"
-                ],
-                "isRequried": true
-            },
-            {
-                "fieldName": "Budget",
-                "values": [
-                    "100-200RS",
-                    "200-300RS",
-                    "300-400RS",
-                    "open to any"
-                ],
-                "isRequried": false
-            }
-        ],
-        "textBox": [
-            {
-                "fieldName": "weight",
-                "isRequried": false
-            },
-            {
-                "fieldName": "quantity",
-                "isRequried": true
-            },
-            {
-                "fieldName": "location",
-                "isRequried": true
-            }
-        ]
-    },
-    "veg": {
-        "dropDown": [
-            {
-                "fieldName": "Fruit Name",
-                "values": [
-                    "Water Melon",
-                    "Mango",
-                    "Orange"
-                ],
-                "isRequried": true
-            },
-            {
-                "fieldName": "Budget",
-                "values": [
-                    "100-200RS",
-                    "200-300RS",
-                    "300-400RS",
-                    "open to any"
-                ],
-                "isRequried": false
-            }
-        ],
-        "textBox": [
-            {
-                "fieldName": "weight",
-                "isRequried": false
-            },
-            {
-                "fieldName": "quantity",
-                "isRequried": true
-            },
-            {
-                "fieldName": "location",
-                "isRequried": true
-            }
-        ]
+    "item": "rice",
+    "category": "crop",
+    "sub-Category": "Basmati",
+    "formFields": {
+        "Location": {
+            "fieldType": "textBox",
+            "value": "",
+            "name": "Location",
+            "placeHolder": "Enter Your Location",
+            "maxLength": 30,
+            "regex": "/^[a-zA-Z]*$/",
+            "isrequired": true,
+            "isReadOnly": false
+        },
+        "Contact": {
+            "fieldType": "textBox",
+            "value": "",
+            "name": "Contact",
+            "placeHolder": "Enter Your Mobile number",
+            "maxLength": 10,
+            "regex": "^[0-9]*$",
+            "isrequired": true,
+            "isReadOnly": false
+        },
+        "message": {
+            "fieldType": "textArea",
+            "value": "",
+            "name": "message",
+            "placeHolder": "Enter Your Message here",
+            "rows": 3,
+            "cols": 6,
+            "isrequired": true,
+            "isReadOnly": false
+        },
+        "No of Bags": {
+            "fieldType": "dropDown",
+            "value": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "name": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "isrequired": false,
+            "isReadOnly": false
+        },
+        "Weight": {
+            "fieldType": "textBox",
+            "value": "",
+            "name": "weight",
+            "placeHolder": "Weight/bag",
+            "maxLength": 10,
+            "regex": "^[0-9]*$",
+            "isrequired": false,
+            "isReadOnly": false
+        },
+        "Units": {
+            "fieldType": "dropDown",
+            "value": [
+                "lb",
+                "kg",
+                "gm"
+            ],
+            "name": [
+                "lb",
+                "kg",
+                "gm"
+            ],
+            "isrequired": true,
+            "isReadOnly": false
+        },
+        "price Per Bag": {
+            "fieldType": "textBox",
+            "value": "",
+            "name": "price",
+            "placeHolder": "Enter the price per bag n rupees",
+            "maxLength": 10,
+            "regex": "^[0-9]*$",
+            "isrequired": true,
+            "isReadOnly": false
+        },
+        "Harvested-on": {
+            "fieldType": "textBox",
+            "value": "11/Apr/2020",
+            "name": "harvestedDate",
+            "Date-Format": "dd/MM/yyyy",
+            "isrequired": false,
+            "isReadOnly": true
+        },
+        "Transportation Required?": {
+            "fieldType": "radio",
+            "value": [
+                "yes",
+                "no"
+            ],
+            "name": "transporationReq",
+            "isrequired": true,
+            "isReadOnly": false
+        }
     }
 }
